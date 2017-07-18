@@ -71,6 +71,7 @@
     <Content Include="image\smlogo.png" />
     <Content Include="script\bootstrap.js" />
     <Content Include="login.aspx" />
+    <Content Include="searchrules.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +97,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchrules.aspx.cs">
+      <DependentUpon>searchrules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchrules.aspx.designer.cs">
+      <DependentUpon>searchrules.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="script\jquery3.1.1.js" />
