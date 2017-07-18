@@ -19,23 +19,25 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <button type="button" data-target="#navbarCollapse1" data-toggle="collapse" class="navbar-toggle">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#" class="navbar-brand">Brand</a>
+                        <a class="navbar-brand" href="#" title="Store">
+                            <img style="max-width: 40px; margin-top: -9px;"
+                                src="image/smiconlogo.png" />
+                        </a>
                     </div>
                     <!-- Collection of nav links and other content for toggling -->
                     <div id="navbarCollapse1" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Messages</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Login</a></li>
+                            <li><a href="#"><i class="fa fa-play fa-lg" aria-hidden="true" style="color:limegreen"></i> Simulator</a></li>
+                            <li><a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"  style="color:deepskyblue"></i> Search Rules</a></li>
+                            <li><a href="#"><i class="fa fa-check-square-o fa-lg" aria-hidden="true" style="color:indianred"></i> Workflow</a></li>
+                            <li><a href="#"><i class="fa fa-bar-chart fa-lg" aria-hidden="true" style="color:blueviolet"></i> Statistics</a></li>
+                            <li><a href="#"><i class="fa fa-comments-o fa-lg" aria-hidden="true" style="color:orangered"></i> Linguistics</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,15 +63,13 @@
                 <!-- Collection of nav links and other content for toggling -->
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-form navbar-left">
-                        <li class="form-group">
-                            Store
+                        <li class="form-group"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="color:salmon"></i> Store:
                             <select id="drpdwnStore" class="form-control">
                                 <option>PCM</option>
                                 <option>MacMall</option>
                             </select>
                         </li>
-                        <li class="form-group">
-                            Server
+                        <li class="form-group"><i class="fa fa-server fa-lg" aria-hidden="true" style="color:darkgoldenrod"></i> Server:
                             <select id="drpdwnServer" class="form-control">
                                 <option>Search</option>
                                 <option>search.pcmall.com</option>
@@ -78,17 +78,17 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a data-toggle="dropdown" title="User" class="dropdown-toggle" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                            <a data-toggle="dropdown" title="Settings" class="dropdown-toggle" href="#"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> Settings</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Audit Trail</a></li>
                                 <li><a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> User Accounts</a></li>
                             </ul>
                         </li>
                         <li class="dropdown active">
-                            <a data-toggle="dropdown" title="User" class="dropdown-toggle" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i> Welcome! Admin <b class="caret"></b></a>
+                            <a data-toggle="dropdown" title="User" class="dropdown-toggle" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i > Welcome! Carl Unggoy <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i> Help</a></li>
-                                <li><a href="login.aspx" style="color:red"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></li>
+                                <li><a href="login.aspx" style="color: red"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></li>
                             </ul>
                         </li>
                     </ul>
