@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchManagerMockUp", "SearchManagerMockUp\SearchManagerMockUp.csproj", "{DDE304B5-9DCE-4378-97B8-52BED990E166}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mockup", "mockup\mockup.csproj", "{2D60E176-FF9D-4663-9356-7D4238C5A5F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DDE304B5-9DCE-4378-97B8-52BED990E166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDE304B5-9DCE-4378-97B8-52BED990E166}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDE304B5-9DCE-4378-97B8-52BED990E166}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDE304B5-9DCE-4378-97B8-52BED990E166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D60E176-FF9D-4663-9356-7D4238C5A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D60E176-FF9D-4663-9356-7D4238C5A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D60E176-FF9D-4663-9356-7D4238C5A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D60E176-FF9D-4663-9356-7D4238C5A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
