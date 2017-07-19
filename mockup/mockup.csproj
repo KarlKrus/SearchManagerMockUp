@@ -59,7 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\plugins\metisMenu\metisMenu.min.css" />
+    <Content Include="css\sb-admin-2.css" />
+    <Content Include="custom-css\jquery-ui.css" />
+    <Content Include="custom-css\jquery-ui.min.css" />
+    <Content Include="custom-css\media-reset.css" />
+    <Content Include="custom-css\style.css" />
+    <Content Include="custom-css\theme\theme.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\new\custom.css" />
+    <Content Include="themer\color.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,9 +83,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="custom-css\" />
     <Folder Include="images\" />
-    <Folder Include="themer\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
