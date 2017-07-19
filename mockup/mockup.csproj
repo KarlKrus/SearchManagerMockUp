@@ -66,15 +66,46 @@
     <Content Include="custom-css\media-reset.css" />
     <Content Include="custom-css\style.css" />
     <Content Include="custom-css\theme\theme.css" />
+    <Content Include="deafult.html" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome\new\custom.css" />
+    <Content Include="images\ecost.png" />
+    <Content Include="images\macmall.png" />
+    <Content Include="images\macmallbd.png" />
+    <Content Include="images\pcm.png" />
+    <Content Include="images\pcmbd.png" />
+    <Content Include="images\pcmg.png" />
+    <Content Include="images\smiconlogo.png" />
+    <Content Include="images\smlogo.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom-js\cookie.js" />
+    <Content Include="js\custom-js\drag-animation.js" />
+    <Content Include="js\custom-js\input-validate.js" />
+    <Content Include="js\custom-js\jquery-validate.bootstrap-tooltip.js" />
+    <Content Include="js\custom-js\jquery.slimscroll.min.js" />
+    <Content Include="js\custom-js\jquery.validate.min.js" />
+    <Content Include="js\custom-js\notification.js" />
+    <Content Include="js\custom-js\review-pagination.js" />
+    <Content Include="js\jquery-1.11.0.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\plugins\metisMenu\metisMenu.min.js" />
+    <Content Include="js\sb-admin-2.js" />
+    <Content Include="searchrules.html" />
     <Content Include="themer\color.css" />
+    <Content Include="themer\custom.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\htmlmockup.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,9 +113,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
