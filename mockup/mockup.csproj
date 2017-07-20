@@ -70,6 +70,7 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome\new\custom.css" />
     <Content Include="images\ecost.png" />
+    <Content Include="images\gtx4.jpg" />
     <Content Include="images\macmall.png" />
     <Content Include="images\macmallbd.png" />
     <Content Include="images\no-pic.png" />

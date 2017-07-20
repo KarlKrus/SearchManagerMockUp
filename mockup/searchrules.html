@@ -206,51 +206,43 @@
                     <div class="well well-sm">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h4>Elevate for <span class="text-primary">Laptop</span></h4>
+                                <h4>Elevate for <span class="text-primary">GXT4</span></h4>
                             </div>
                             <div class="col-sm-6">
                                 <div class="pull-right">
-                                    <!--<select class="form-control">
-                                        <option>Product Item</option>
-                                        <option>IMS Categories</option>
-                                        <option>Product Site Taxonomy</option>
-                                        <option>Facets</option>
-                                    </select>-->
-                                    <div class="btn-group">
-                                        <button id="drpdwnItemMenu" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Elevate Options">
-                                            <span>Elevate Options</span>  <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="drpdwnItemMenu">
-                                            <li><a href="#">Product Item</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">IMS Categories</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Product Site Taxonomy</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Facets</a></li>
-                                        </ul>
-                                    </div>
-                                    <button type="button" class="btn btn-success" title="Add Content">
-                                        <i class="fa fa-plus-square fa-lg" style="color:white"></i> <!--Add Item-->
-                                    </button>
-                                    <button type="button" class="btn btn-success" title="Submit for Approval">
-                                        <i class="fa fa-thumbs-up fa-lg" style="color:lawngreen"></i> Submit for Approval
-                                    </button>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Options">
-                                            <i class="fa fa-navicon fa-lg"></i>
-                                        </button>
-                                        <ul class="dropdown-menu" style="right: 0; left: auto;">
-                                            <li><a href="#"><i class="fa fa-arrow-circle-o-down fa-lg" style="color:blue"></i> Back Up Now</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#"><i class="fa fa-download fa-lg" style="color:yellowgreen"></i> Download Version</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#"><i class="fa fa-copy fa-lg" style="color:orange"></i> Copy to Other Site</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#"><i class="fa fa-download fa-lg" style="color:dodgerblue"></i> Download Content</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#"><i class="fa fa-trash-o fa-lg" style="color:red"></i> Remove Content</a></li>
-                                        </ul>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <select id="drpdownElevate" class="form-control" title="Elevate Options">
+                                                <option>Product Items</option>
+                                                <option>IMS Categories </option>
+                                                <option>Product Site Taxonomy</option>
+                                                <option>Facets </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-success" title="Add Content">
+                                                <i class="fa fa-plus-square fa-lg" style="color:white"></i> <!--Add Item-->
+                                            </button>
+                                            <button type="button" class="btn btn-success" title="Submit for Approval">
+                                                <i class="fa fa-thumbs-up fa-lg" style="color:lawngreen"></i> Submit for Approval
+                                            </button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rule Options">
+                                                    <i class="fa fa-navicon fa-lg"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                                                    <li><a href="#"><i class="fa fa-arrow-circle-o-down fa-lg" style="color:blue"></i> Back Up Now</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#"><i class="fa fa-download fa-lg" style="color:yellowgreen"></i> Download Version</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#"><i class="fa fa-copy fa-lg" style="color:orange"></i> Copy to Other Site</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#"><i class="fa fa-download fa-lg" style="color:dodgerblue"></i> Download Content</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#"><i class="fa fa-trash-o fa-lg" style="color:red"></i> Remove Content</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -265,39 +257,44 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="pull-right">
-                                    <div class="btn-group">
-                                        <button id="drpdownFilter" type="button" size="300" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Validity">
-                                            <span>All</span>  <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="drpdownFilter">
-                                            <li><a href="#">Active</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Expired </a></li>
-                                        </ul>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <select id="Select1" class="form-control input-sm">
+                                                <option>All</option>
+                                                <option>Active</option>
+                                                <option>Expired</option>
+                                            </select>
+                                            <button type="button" class="btn btn-link btn-xs" title="List View">
+                                                <i class="fa fa-list fa-lg" style="color:black"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-link btn-xs" title="Grid View">
+                                                <i class="fa fa-th-large fa-lg" style="color:black"></i>
+                                            </button>
+                                        </div>
+                                        <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default btn-sm" title="First">
+                                                        <i class="fa fa-step-backward fa-lg" style="color:green"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-default btn-sm" title="Previous">
+                                                        <i class="fa fa-chevron-left fa-lg" style="color:green"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="text" class="form-control input-sm" size="1" placeholder="1">
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default btn-sm" title="Next">
+                                                        <i class="fa fa-chevron-right fa-lg" style="color:green"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-default btn-sm" title="Last">
+                                                        <i class="fa fa-step-forward fa-lg" style="color:green"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button type="button" class="btn btn-link btn-xs" title="List View">
-                                        <i class="fa fa-list fa-lg" style="color:black"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-link btn-xs" title="Grid View">
-                                        <i class="fa fa-th-large fa-lg" style="color:black"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-link btn-xs" title="Previous">
-                                        <i class="fa fa-chevron-left fa-lg" style="color:green"></i>
-                                    </button>
-                                    <!--<div class="btn-group">
-                                        <button id="dropdownPage" type="button" size="300" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Go to Page">
-                                            <span>Page</span>  <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownPage">
-                                            <li><a href="#">1</a></li>
-                                            <li><a href="#">2 </a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4 </a></li>
-                                        </ul>
-                                    </div>-->
-                                    <button type="button" class="btn btn-link btn-xs" title="Next">
-                                        <i class="fa fa-chevron-right fa-lg" style="color:green"></i>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -311,18 +308,6 @@
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <!--<div class="pull-left">
-                                                    <div id="radio-switch">
-                                                        <div class="btn-group btn-toggle" data-toggle="buttons">
-                                                            <label class="btn btn-default active btn-xs">
-                                                                <input name="options" checked="checked" type="radio"> Normal
-                                                            </label>
-                                                            <label class="btn btn-default btn-xs">
-                                                                <input name="options" value="option2" type="radio"> Force Add
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>-->
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="pull-right">
@@ -342,9 +327,39 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel-body"></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <img src="images/gtx4.jpg" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label>Position: </label>
+                                                <input type="text" class="form-control" placeholder="Position" />
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <label>Date: </label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Choose Date">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label>Details:</label>
+                                                <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                                <p><span class="text-success">SKU#: </span>13374814</p>
+                                                <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="col-sm-4">
                                 <div class="panel panel-warning">
                                     <div class="panel-heading">
@@ -381,7 +396,36 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel-body"></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <img src="images/gtx4.jpg" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label>Position: </label>
+                                                <input type="text" class="form-control" placeholder="Position" />
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <label>Date: </label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Choose Date">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label>Details:</label>
+                                                <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                                <p><span class="text-success">SKU#: </span>13374814</p>
+                                                <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -420,7 +464,36 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel-body"></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <img src="images/no-pic.png" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label>Position: </label>
+                                                <input type="text" class="form-control" placeholder="Position" />
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <label>Date: </label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Choose Date">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label>Details:</label>
+                                                <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                                <p><span class="text-success">SKU#: </span>13374814</p>
+                                                <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
