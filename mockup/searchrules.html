@@ -670,12 +670,12 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <ul class="nav nav-tabs">
-                                            <li>
+                                            <li class="active">
                                                 <a data-toggle="tab" href="#set">
                                                     <label>Set Redirect</label>
                                                 </a>
                                             </li>
-                                            <li class="active">
+                                            <li>
                                                 <a data-toggle="tab" href="#keyword">
                                                     <label>Keyword Redirect</label>
                                                 </a>
@@ -691,15 +691,117 @@
                                             <div id="set" class="tab-pane fade in active">
                                                 <br />
                                                 <div class="well well-sm">
-                                                    <input type="checkbox" id="activate" class="activate"> Use this action (<i>Note: Checking this box will uncheck the other actions.</i>)
+                                                    <input type="checkbox" id="activate"> Use this action (<i class="text-danger">Note: Checking this box will uncheck the other actions.</i>)
                                                 </div>
                                                 <div class="well well-sm">
-                                                    <input type="checkbox" id="activate" class="activate"> Include keyword in search  (<i>Note: Checking this box will allow Ranking Rule to influence search results based on keyword matches.</i>)
+                                                    <input type="checkbox" id="activate"> Include keyword in search  (<i class="text-danger">Note: Checking this box will allow Ranking Rule to influence search results based on keyword matches.</i>)
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <div class="pull-left">
+                                                                    <div class="form-inline">
+                                                                        <div class="form-group">
+                                                                            <label>Create Filter Group: </label>
+                                                                            <select id="drpdownElevate" class="form-control" title="Filter Group Options">
+                                                                                <option>IMS Categories </option>
+                                                                                <option>Product Site Taxonomy</option>
+                                                                                <option>Facets </option>
+                                                                            </select>
+                                                                            <button type="button" class="btn btn-success" title="Add">
+                                                                                <i class="fa fa-plus-square fa-lg" style="color:white"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-body"></div>
                                                 </div>
                                             </div>
                                             <div id="keyword" class="tab-pane fade">
+                                                <br />
+                                                <div class="well well-sm">
+                                                    <input type="checkbox"> Use this action (<i class="text-danger">Note: Checking this box will uncheck the other actions.</i>)
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <label>Search Header Text</label>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="form-inline">
+                                                            <div class="form-group">
+                                                                <input type="radio" name="defaultText"> Default Text: <b>Search Result for "original keyword"</b><br />
+                                                                <input type="radio" name="defaultText"> Standard  Text: <b>Showing Result for "replacement keyword" / Search instead for: original Keyword</b><br />
+                                                                <input type="radio" name="defaultText"> Custom  Text: <input type="text" class="form-control" size="100" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <label>Replace Keyword</label>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3"></div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-inline">
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" placeholder="Replacement Keyword" size="50">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-success" title="Save">
+                                                                                    <i class="fa fa-floppy-o fa-lg" style="color:darkblue"></i> Save
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3"></div>
+                                                        </div>
+                                                        <br />
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label>This keyword is associated to the following rules: </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div id="page" class="tab-pane fade">
+                                                <br />
+                                                <div class="well well-sm">
+                                                    <input type="checkbox"> Use this action (<i class="text-danger">Note: Checking this box will uncheck the other actions.</i>)
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <label>Redirect URL</label>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3"></div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-inline">
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" placeholder="Redirect URL" size="50">
+                                                                            <div class="input-group-btn">
+                                                                                <button type="button" class="btn btn-success" title="Save">
+                                                                                    <i class="fa fa-floppy-o fa-lg" style="color:darkblue"></i> Save
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
