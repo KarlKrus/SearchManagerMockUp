@@ -75,6 +75,7 @@
     <Content Include="images\macmallbd.png" />
     <Content Include="images\no-pic.png" />
     <Content Include="images\pcm.png" />
+    <Content Include="images\pcmalllogo.png" />
     <Content Include="images\pcmbd.png" />
     <Content Include="images\pcmg.png" />
     <Content Include="images\server.png" />
@@ -93,6 +94,7 @@
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\plugins\metisMenu\metisMenu.min.js" />
     <Content Include="js\sb-admin-2.js" />
+    <Content Include="login.html" />
     <Content Include="searchrules.html" />
     <Content Include="themer\color.css" />
     <Content Include="themer\custom.js" />
