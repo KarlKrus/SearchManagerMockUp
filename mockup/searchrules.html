@@ -158,12 +158,14 @@
             </div>
             <script>
                 function elevate() {
+                    var srl = document.getElementById('searchruleLanding');
                     var ele = document.getElementById('elevateModule');
                     var dem = document.getElementById('demoteModule');
                     var exc = document.getElementById('excludeModule');
                     var red = document.getElementById('redirectModule');
                     var rel = document.getElementById('relevancyModule');
                     if (ele.style.display === 'none') {
+                        srl.style.display = 'none';
                         ele.style.display = 'block';
                         dem.style.display = 'none';
                         exc.style.display = 'none';
@@ -171,16 +173,19 @@
                         rel.style.display = 'none';
                     } else {
                         ele.style.display = 'none';
+                        srl.style.display = 'block';
                     }
                 }
 
                 function demote() {
+                    var srl = document.getElementById('searchruleLanding');
                     var ele = document.getElementById('elevateModule');
                     var dem = document.getElementById('demoteModule');
                     var exc = document.getElementById('excludeModule');
                     var red = document.getElementById('redirectModule');
                     var rel = document.getElementById('relevancyModule');
                     if (dem.style.display === 'none') {
+                        srl.style.display = 'none';
                         ele.style.display = 'none';
                         dem.style.display = 'block';
                         exc.style.display = 'none';
@@ -188,16 +193,19 @@
                         rel.style.display = 'none';
                     } else {
                         dem.style.display = 'none';
+                        srl.style.display = 'block';
                     }
                 }
 
                 function exclude() {
+                    var srl = document.getElementById('searchruleLanding');
                     var ele = document.getElementById('elevateModule');
                     var dem = document.getElementById('demoteModule');
                     var exc = document.getElementById('excludeModule');
                     var red = document.getElementById('redirectModule');
                     var rel = document.getElementById('relevancyModule');
                     if (exc.style.display === 'none') {
+                        srl.style.display = 'none';
                         ele.style.display = 'none';
                         dem.style.display = 'none';
                         exc.style.display = 'block';
@@ -205,16 +213,19 @@
                         rel.style.display = 'none';
                     } else {
                         exc.style.display = 'none';
+                        srl.style.display = 'block';
                     }
                 }
 
                 function redirect() {
+                    var srl = document.getElementById('searchruleLanding');
                     var ele = document.getElementById('elevateModule');
                     var dem = document.getElementById('demoteModule');
                     var exc = document.getElementById('excludeModule');
                     var red = document.getElementById('redirectModule');
                     var rel = document.getElementById('relevancyModule');
                     if (red.style.display === 'none') {
+                        srl.style.display = 'none';
                         ele.style.display = 'none';
                         dem.style.display = 'none';
                         exc.style.display = 'none';
@@ -222,16 +233,19 @@
                         rel.style.display = 'none';
                     } else {
                         red.style.display = 'none';
+                        srl.style.display = 'block';
                     }
                 }
 
                 function relevancy() {
+                    var srl = document.getElementById('searchruleLanding');
                     var ele = document.getElementById('elevateModule');
                     var dem = document.getElementById('demoteModule');
                     var exc = document.getElementById('excludeModule');
                     var red = document.getElementById('redirectModule');
                     var rel = document.getElementById('relevancyModule');
                     if (rel.style.display === 'none') {
+                        srl.style.display = 'none';
                         ele.style.display = 'none';
                         dem.style.display = 'none';
                         exc.style.display = 'none';
@@ -239,6 +253,7 @@
                         rel.style.display = 'block';
                     } else {
                         rel.style.display = 'none';
+                        srl.style.display = 'block';
                     }
                 }
             </script>
@@ -286,6 +301,44 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <br />
+            <!--Search Rules-->
+            <div id="searchruleLanding">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1>Hello, world!</h1>
+                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>Heading</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Heading</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <footer>
+                        <p>&copy; 2016 Company, Inc.</p>
+                    </footer>
+                </div>
+            </div>
+            <!--#Search Rules-->
             <!--Elevate Section-->
             <div class="row" id="elevateModule" style="display:none">
                 <!--Title and Options-->
@@ -1448,7 +1501,7 @@
                                                                 <div class="form-inline">
                                                                     <div class="form-group">
                                                                         <div class="input-group">
-                                                                            <input type="text" class="form-control" placeholder="Replacement Keyword" size="50">
+                                                                            <input type="text" class="form-control" placeholder="Replacement Keyword" size="100">
                                                                             <div class="input-group-btn">
                                                                                 <button type="button" class="btn btn-success" title="Save">
                                                                                     <i class="fa fa-floppy-o fa-lg" style="color:darkblue"></i> Save
