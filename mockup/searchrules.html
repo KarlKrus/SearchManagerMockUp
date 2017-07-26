@@ -156,36 +156,121 @@
 
                 </div>
             </div>
+            <script>
+                function elevate() {
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (ele.style.display === 'none') {
+                        ele.style.display = 'block';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    } else {
+                        ele.style.display = 'none';
+                    }
+                }
 
+                function demote() {
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (dem.style.display === 'none') {
+                        ele.style.display = 'none';
+                        dem.style.display = 'block';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    } else {
+                        dem.style.display = 'none';
+                    }
+                }
+
+                function exclude() {
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (exc.style.display === 'none') {
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'block';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    } else {
+                        exc.style.display = 'none';
+                    }
+                }
+
+                function redirect() {
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (red.style.display === 'none') {
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'block';
+                        rel.style.display = 'none';
+                    } else {
+                        red.style.display = 'none';
+                    }
+                }
+
+                function relevancy() {
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (rel.style.display === 'none') {
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'block';
+                    } else {
+                        rel.style.display = 'none';
+                    }
+                }
+            </script>
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#elevate" data-toggle="tooltip" data-placement="right" title="Elevate">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Elevate" onclick="elevate()">
                                 <i class="fa fa-chevron-up fa-fw"></i>
                                 <span class="collapse-menu">Elevate</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#demote" data-toggle="tooltip" data-placement="right" title="Demote">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Demote" onclick="demote()">
                                 <i class="fa fa-chevron-down fa-fw"></i>
                                 <span class="collapse-menu">Demote</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#exclude" data-toggle="tooltip" data-placement="right" title="Exclude">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Exclude" onclick="exclude()">
                                 <i class="fa fa-ban fa-fw"></i>
                                 <span class="collapse-menu">Exclude</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#redirect" data-toggle="tooltip" data-placement="right" title="Redirect">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Redirect" onclick="redirect()">
                                 <i class="fa fa-exchange fa-fw"></i>
                                 <span class="collapse-menu">Redirect</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#relevancy" data-toggle="tooltip" data-placement="right" title="Relevancy">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Relevancy" onclick="relevancy()">
                                 <i class="fa fa-angle-double-up fa-fw"></i>
                                 <span class="collapse-menu">Relevancy</span>
                             </a>
@@ -200,10 +285,9 @@
 
         <!-- Page Content -->
         <div id="page-wrapper">
-
+            <br />
             <!--Elevate Section-->
-            <br id="elevate" />
-            <div class="row" id="elevateModule">
+            <div class="row" id="elevateModule" style="display:none">
                 <!--Title and Options-->
                 <div class="well well-sm">
                     <div class="row">
@@ -513,10 +597,8 @@
                 <!--#Content Panels-->
             </div>
             <!--#Elevate Section-->
-
             <!--Demote Section-->
-            <br id="Demote" />
-            <div class="row" id="DemoteModule">
+            <div class="row" id="demoteModule" style="display:none">
                 <!--Title and Options-->
                 <div class="well well-sm">
                     <div class="row">
@@ -686,12 +768,12 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="panel panel-warning">
+                            <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="pull-left">
-                                                <div id="radio-switch">
+                                                <!--<div id="radio-switch">
                                                     <div class="btn-group btn-toggle" data-toggle="buttons">
                                                         <label class="btn btn-default btn-xs">
                                                             <input name="options" value="option2" type="radio"> Normal
@@ -700,7 +782,7 @@
                                                             <input name="options" checked="checked" type="radio"> Force Add
                                                         </label>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -754,12 +836,12 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="panel panel-danger">
+                            <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="pull-left">
-                                                <div id="radio-switch">
+                                                <!--<div id="radio-switch">
                                                     <div class="btn-group btn-toggle" data-toggle="buttons">
                                                         <label class="btn btn-default  btn-primary btn-xs">
                                                             <input name="options" checked="checked" type="radio"> Normal
@@ -768,7 +850,7 @@
                                                             <input name="options" value="option2" type="radio"> Force Add
                                                         </label>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -826,10 +908,308 @@
                 <!--#Content Panels-->
             </div>
             <!--#Demote Section-->
+            <!--Exclude Section-->
+            <div class="row" id="excludeModule" style="display:none">
+                <!--Title and Options-->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h4>Exclude for <span class="text-primary">GXT4</span></h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="pull-right">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <select id="drpdownExclude" class="form-control" title="Exclude Options">
+                                            <option>Product Items</option>
+                                            <option>IMS Categories </option>
+                                            <option>Product Site Taxonomy</option>
+                                            <option>Facets </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-success" title="Add Content">
+                                            <i class="fa fa-plus-square fa-lg" style="color:white"></i> <!--Add Item-->
+                                        </button>
+                                        <button type="button" class="btn btn-success" title="Submit for Approval">
+                                            <i class="fa fa-thumbs-up fa-lg" style="color:lawngreen"></i> Submit for Approval
+                                        </button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rule Options">
+                                                <i class="fa fa-navicon fa-lg"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" style="right: 0; left: auto;">
+                                                <li><a href="#"><i class="fa fa-arrow-circle-o-down fa-lg" style="color:blue"></i> Back Up Now</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#"><i class="fa fa-download fa-lg" style="color:yellowgreen"></i> Download Version</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#"><i class="fa fa-copy fa-lg" style="color:orange"></i> Copy to Other Site</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#"><i class="fa fa-download fa-lg" style="color:dodgerblue"></i> Download Content</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#"><i class="fa fa-trash-o fa-lg" style="color:red"></i> Remove Content</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--#Title and Option-->
+                <!--Navigation-->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <h5 style="font-weight:700">Status:<span class="text-danger"> Setup a Rule </span></h5>
+                                </div>
+                                <div class="form-group">
+                                    <h5 style="font-weight:700">
+                                        Last Published:<span class="text-warning">
+                                            10/15/2014 07:11 PM
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="pull-right">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <select id="Select1" class="form-control input-sm">
+                                            <option>All</option>
+                                            <option>Active</option>
+                                            <option>Expired</option>
+                                        </select>
+                                        <button type="button" class="btn btn-link btn-xs" title="List View">
+                                            <i class="fa fa-list fa-lg" style="color:black"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-xs" title="Grid View">
+                                            <i class="fa fa-th-large fa-lg" style="color:black"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-sm" title="First">
+                                                    <i class="fa fa-step-backward fa-lg" style="color:dodgerblue"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm" title="Previous">
+                                                    <i class="fa fa-chevron-left fa-lg" style="color:dodgerblue"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control input-sm" size="1" placeholder="1">
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-sm" title="Next">
+                                                    <i class="fa fa-chevron-right fa-lg" style="color:dodgerblue"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm" title="Last">
+                                                    <i class="fa fa-step-forward fa-lg" style="color:dodgerblue"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--#Navigation-->
+                <!--Content Panels-->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <button type="button" class="btn btn-link btn-xs" title="Comment">
+                                                    <i class="fa fa-comment-o fa-lg" style="color:midnightblue"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Audit">
+                                                    <i class="fa fa-file-text-o fa-lg" style="color:dimgray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Modified by">
+                                                    <i class="fa fa-smile-o fa-lg" style="color:orange"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Delete Item">
+                                                    <i class="fa fa-times fa-lg" style="color:red"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <img src="images/gtx4.jpg" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Valid Until: </label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Choose Date">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Details:</label>
+                                            <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                            <p><span class="text-success">SKU#: </span>13374814</p>
+                                            <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="pull-left">
+                                                <!--<div id="radio-switch">
+                                                    <div class="btn-group btn-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-default btn-xs">
+                                                            <input name="options" value="option2" type="radio"> Normal
+                                                        </label>
+                                                        <label class="btn btn-default btn-primary btn-xs">
+                                                            <input name="options" checked="checked" type="radio"> Force Add
+                                                        </label>
+                                                    </div>
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <button type="button" class="btn btn-link btn-xs" title="Comment">
+                                                    <i class="fa fa-comment-o fa-lg" style="color:midnightblue"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Audit">
+                                                    <i class="fa fa-file-text-o fa-lg" style="color:dimgray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Modified by">
+                                                    <i class="fa fa-smile-o fa-lg" style="color:orange"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Delete Item">
+                                                    <i class="fa fa-times fa-lg" style="color:red"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <img src="images/gtx4.jpg" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Valid Until: </label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Choose Date">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Details:</label>
+                                            <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                            <p><span class="text-success">SKU#: </span>13374814</p>
+                                            <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="pull-left">
+                                                <!--<div id="radio-switch">
+                                                    <div class="btn-group btn-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-default  btn-primary btn-xs">
+                                                            <input name="options" checked="checked" type="radio"> Normal
+                                                        </label>
+                                                        <label class="btn btn-default btn-xs">
+                                                            <input name="options" value="option2" type="radio"> Force Add
+                                                        </label>
+                                                    </div>
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <button type="button" class="btn btn-link btn-xs" title="Comment">
+                                                    <i class="fa fa-comment-o fa-lg" style="color:midnightblue"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Audit">
+                                                    <i class="fa fa-file-text-o fa-lg" style="color:dimgray"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Modified by">
+                                                    <i class="fa fa-smile-o fa-lg" style="color:orange"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-link btn-xs" title="Delete Item">
+                                                    <i class="fa fa-times fa-lg" style="color:red"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <img src="images/no-pic.png" class="img-responsive center-block img-thumbnail" alt="Responsive image" width="100" height="100">
+                                    </div>
+                                    <br>
+                                    <div class="row">
 
+                                        <div class="col-sm-12">
+                                            <label>Valid Until: </label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Choose Date">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-lg"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label>Details:</label>
+                                            <p><b> Liebert </b><span class="text-info"> GXT4 1500VAUPS OL 120V RACK TWR RMKIT</span> </p>
+                                            <p><span class="text-success">SKU#: </span>13374814</p>
+                                            <p><span class="text-success">Mfr. Part#: </span>GXT4-1500RT120</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--#Content Panels-->
+            </div>
+            <!--#Exclude Section-->
             <!--Redirect Section-->
-            <br id="redirect" />
-            <div class="row" id="redirectModule">
+            <div class="row" id="redirectModule" style="display:none">
                 <!--Title and Options-->
                 <div class="well well-sm">
                     <div class="row">
@@ -1134,10 +1514,8 @@
                 <!--#Content Panels-->
             </div>
             <!--#Redirect Section-->
-
             <!--Relevancy Section-->
-            <br id="relevancy" />
-            <div class="row" id="relevancyModule">
+            <div class="row" id="relevancyModule" style="display:none">
                 <div class="well well-sm">
                     <div class="row">
                         <div class="col-sm-6">
@@ -1462,7 +1840,7 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
         <!--#Relevancy Section-->
 
