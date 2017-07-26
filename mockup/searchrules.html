@@ -53,6 +53,7 @@
 </head>
 <body>
     <div class="wrapper" id="wrapper">
+
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -297,48 +298,74 @@
                 </div>
             </div>
         </nav>
+        <!--#Navigation-->
 
         <!-- Page Content -->
         <div id="page-wrapper">
             <br />
+
             <!--Search Rules-->
             <div id="searchruleLanding">
                 <div class="jumbotron">
                     <div class="container">
-                        <h1>Hello, world!</h1>
-                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                        <h1><i class="fa fa-search fa-lg" aria-hidden="true" style="color: deepskyblue"></i> Search Rules</h1>
+                        <p>This module allows the user to create and update rules that control search results on mall sites</p>
+                        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
                     </div>
                 </div>
 
-                <div class="container">
-                    <!-- Example row of columns -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>
+                            <i class="fa fa-chevron-up fa-fw"></i>
+                            <span class="collapse-menu">Elevate</span>
+                        </h2>
+                        <p>The Elevate search rule is used for pushing a SKU(s) using a specific keyword to the top of the natural search result.  </p>
+                        <p><a class="btn btn-default" href="#" role="button" onclick="elevate()">Manage Rules &raquo;</a></p>
                     </div>
+                    <div class="col-md-4">
+                        <h2>
+                            <i class="fa fa-chevron-down fa-fw"></i>
+                            <span class="collapse-menu">Demote</span>
+                        </h2>
+                        <p>The Demote search rule is the opposite of Elevate search rule. By creating a Demote search rule, SKU(s) can be pushed at the bottom of search results. </p>
+                        <p><a class="btn btn-default" href="#" role="button" onclick="demote()">Manage Rules &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>
+                            <i class="fa fa-ban fa-fw"></i>
+                            <span class="collapse-menu">Exclude</span>
+                        </h2>
+                        <p>The Exclude search rule is used in removing SKU(s) from the natural search result of a specific keyword.</p>
+                        <p><a class="btn btn-default" href="#" role="button" onclick="exclude()">Manage Rules &raquo;</a></p>
+                    </div>
+                </div>
 
-                    <hr>
-
-                    <footer>
-                        <p>&copy; 2016 Company, Inc.</p>
-                    </footer>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>
+                            <i class="fa fa-exchange fa-fw"></i>
+                            <span class="collapse-menu">Redirect</span>
+                        </h2>
+                        <p>Query Cleaning is another way of overriding the natural search result. If a keyword is set to have a redirection rule, the keyword will be replaced or have a redirection.</p>
+                        <p><a class="btn btn-default" href="#" role="button" onclick="redirect()">Manage Rules &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>
+                            <i class="fa fa-angle-double-up fa-fw"></i>
+                            <span class="collapse-menu">Relevancy</span>
+                        </h2>
+                        <p>Creating a ranking rule is another way of manipulating natural search results. Ranking rules allow users to control how search results are displayed to a certain degree. In addition, ranking rules allow the users to control which fields are matched to a search term, and how the search results’ scores are computed.</p>
+                        <p><a class="btn btn-default" href="#" role="button" onclick="relevancy()">Manage Rules &raquo;</a></p>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
                 </div>
             </div>
             <!--#Search Rules-->
+
             <!--Elevate Section-->
             <div class="row" id="elevateModule" style="display:none">
                 <!--Title and Options-->
@@ -650,6 +677,7 @@
                 <!--#Content Panels-->
             </div>
             <!--#Elevate Section-->
+
             <!--Demote Section-->
             <div class="row" id="demoteModule" style="display:none">
                 <!--Title and Options-->
@@ -961,6 +989,7 @@
                 <!--#Content Panels-->
             </div>
             <!--#Demote Section-->
+
             <!--Exclude Section-->
             <div class="row" id="excludeModule" style="display:none">
                 <!--Title and Options-->
@@ -1261,6 +1290,7 @@
                 <!--#Content Panels-->
             </div>
             <!--#Exclude Section-->
+
             <!--Redirect Section-->
             <div class="row" id="redirectModule" style="display:none">
                 <!--Title and Options-->
@@ -1567,6 +1597,7 @@
                 <!--#Content Panels-->
             </div>
             <!--#Redirect Section-->
+
             <!--Relevancy Section-->
             <div class="row" id="relevancyModule" style="display:none">
                 <div class="well well-sm">
@@ -1892,28 +1923,30 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
+            <!--#Relevancy Section-->
 
-        </div>
-        <!--#Relevancy Section-->
-
-        <div class="row">
-            <div class="col-sm-12 admin-footer">
-                <div class="pull-left text-info">
-                    <span>
-                        &copy;
-                        <script type="text/javascript">
-                            document.write(new Date().getFullYear());
-                        </script>
-                        PCM Sales, Inc.
-                    </span>
+            <!--Footer-->
+            <div class="row">
+                <div class="col-sm-12 admin-footer">
+                    <div class="pull-left text-info">
+                        <span>
+                            &copy;
+                            <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                            </script>
+                            PCM Sales, Inc.
+                        </span>
+                    </div>
+                    <div class="pull-right text-info">1940 E. Mariposa Ave, El Segundo, CA 90245 - 800-700-1000 </div>
                 </div>
-                <div class="pull-right text-info">1940 E. Mariposa Ave, El Segundo, CA 90245 - 800-700-1000 </div>
             </div>
+            <!--#Footer -->
         </div>
+        <!--#Page Content-->
+
     </div>
-    </div>
-    <!-- Footer -->
+
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
