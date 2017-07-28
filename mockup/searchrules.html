@@ -2329,11 +2329,222 @@
             <!--#Redirect Section-->
             <!--Relevancy Section-->
             <div class="row" id="relevancyModule" style="display:none">
+                <script>
+                    function relevancyCRUDSHOW() {
+                        var relCRUD = document.getElementById('relevancyCRUD');
+                        var relKWL = document.getElementById('relevancyKWList');
+                        if (relCRUD.style.display === 'none') {
+                            relCRUD.style.display = 'block';
+                            relKWL.style.display = 'none';
+                        } else {
+                            relCRUD.style.display = 'none';
+                        }
+                    }
+                    function relevancyKWLSHOW() {
+                        var relCRUD = document.getElementById('relevancyCRUD');
+                        var relKWL = document.getElementById('relevancyKWList');
+                        if (relKWL.style.display === 'none') {
+                            relCRUD.style.display = 'none';
+                            relKWL.style.display = 'block';
+                        } else {
+                            relCRUD.style.display = 'none';
+                        }
+                    }
+                </script>
+                <div id="relevancyKWList">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div id="redRuleList" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="pull-left">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <h4>Relevancy Rule:</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Search Keyword">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-info" title="Search">
+                                                                    <i class="fa fa-search fa-lg" style="color:white"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-success" title="Add">
+                                                                    <i class="fa fa-plus-square fa-lg" style="color:white"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-hover table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Keyword</th>
+                                                <th>Status</th>
+                                                <th>Content Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ELO Touch Solution</td>
+                                                <td>Ready for Production</td>
+                                                <td><a href="#" class="btn btn-link" onclick="relevancyCRUDSHOW()">12</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td> GXT4</td>
+                                                <td>Setup a Rule</td>
+                                                <td><a href="#" class="btn btn-link" onclick="relevancyCRUDSHOW()">3</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apple</td>
+                                                <td>Action Required</td>
+                                                <td><a href="#" class="btn btn-link" onclick="relevancyCRUDSHOW()">8</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row">
+                                        <div class="col-sm-6"></div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-sm" title="First">
+                                                                    <i class="fa fa-step-backward fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-default btn-sm" title="Previous">
+                                                                    <i class="fa fa-chevron-left fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" class="form-control input-sm" size="1" placeholder="1">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-sm" title="Next">
+                                                                    <i class="fa fa-chevron-right fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-default btn-sm" title="Last">
+                                                                    <i class="fa fa-step-forward fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div id="redKWList" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="pull-left">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <h4>Keyword:</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Search Keyword">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-info" title="Search">
+                                                                    <i class="fa fa-search fa-lg" style="color:white"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-hover table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Keyword</th>
+                                                <th>Rule Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ELO Touchpad</td>
+                                                <td><a href="#" class="btn btn-link">3</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td> GXT4</td>
+                                                <td><a href="#" class="btn btn-link">3</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ELO Keyboard</td>
+                                                <td><a href="#" class="btn btn-link">1</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row">
+                                        <div class="col-sm-6"></div>
+                                        <div class="col-sm-6">
+                                            <div class="pull-right">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-sm" title="First">
+                                                                    <i class="fa fa-step-backward fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-default btn-sm" title="Previous">
+                                                                    <i class="fa fa-chevron-left fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" class="form-control input-sm" size="1" placeholder="1">
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-sm" title="Next">
+                                                                    <i class="fa fa-chevron-right fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-default btn-sm" title="Last">
+                                                                    <i class="fa fa-step-forward fa-lg" style="color:dodgerblue"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="relevancyCRUD" style="display:none">
                     <div class="well well-sm">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h4>
+                                <h4><i class="fa fa-arrow-left btn-link" title="Got back to list" style="color:dodgerblue" onclick="relevancyKWLSHOW()"></i>  
                                     Relevancy Rule for
                                     <span class="text-primary">elo touch solutions</span>
                                 </h4>
