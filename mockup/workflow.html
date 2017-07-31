@@ -266,27 +266,33 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Elevate" onclick="elevate()">
-                                <i class="fa fa-chevron-up fa-fw"></i>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Workflow" onclick="elevate()">
+                                <i class="fa  fa-thumbs-o-up fa-fw"></i>
+                                <span class="collapse-menu">Workflow</span>
+                            </a>
+                        </li>
+                        <!--<li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Queued for Approval" onclick="elevate()">
+                                <i class="fa  fa-thumbs-o-up fa-fw"></i>
                                 <span class="collapse-menu">Queued for Approval</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Demote" onclick="demote()">
-                                <i class="fa fa-chevron-down fa-fw"></i>
-                                <span class="collapse-menu">Demote</span>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Push to Production" onclick="demote()">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span class="collapse-menu">Push to Production</span>
+                            </a>
+                        </li>-->
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Export Rule" onclick="exclude()">
+                                <i class="fa fa-upload fa-fw"></i>
+                                <span class="collapse-menu">Export Rule</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Exclude" onclick="exclude()">
-                                <i class="fa fa-ban fa-fw"></i>
-                                <span class="collapse-menu">Exclude</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Redirect" onclick="redirect()">
-                                <i class="fa fa-exchange fa-fw"></i>
-                                <span class="collapse-menu">Redirect</span>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="redirect()">
+                                <i class="fa fa-download fa-fw"></i>
+                                <span class="collapse-menu">Auto Import</span>
                             </a>
                         </li>
                         <li>
@@ -300,6 +306,236 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <br />
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h4> Queued for Approval</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#ele">
+                                        <label>Elevate</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#dem">
+                                        <label>Demote</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#exc">
+                                        <label>Exlude</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#red">
+                                        <label>Redirect</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#rel">
+                                        <label>Relevancy</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#did">
+                                        <label>Did You Mean</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#typ">
+                                        <label>Typeahead</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="ele" class="tab-pane fade in active">
+                                    <div id="ele" class="tab-pane fade in active">
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr style="text-align:center">
+                                                    <th><input type="checkbox" /></th>
+                                                    <th>Content</th>
+                                                    <th colspan="2">Rule Info</th>
+                                                    <th>Request Type</th>
+                                                    <th>Request Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr >
+                                                    <td><input type="checkbox" /></td>
+                                                    <td><button class="btn btn-link btn-xs"><i class="fa fa-file-text-o"></i></button></td>
+                                                    <td colspan="2">Apple Iphone</td>
+                                                    <td>Update</td>
+                                                    <td>
+                                                        JamesR
+                                                        07/13/2017 02:14 PM
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" /></td>
+                                                    <td><button class="btn btn-link btn-xs"><i class="fa fa-file-text-o"></i></button></td>
+                                                    <td colspan="2">Keyboard</td>
+                                                    <td>Update</td>
+                                                    <td>
+                                                        JamesR
+                                                        07/13/2017 02:14 PM
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" /></td>
+                                                    <td><button class="btn btn-link btn-xs"><i class="fa fa-file-text-o"></i></button></td>
+                                                    <td colspan="2">Mouse</td>
+                                                    <td>Update</td>
+                                                    <td>
+                                                        JamesR
+                                                        07/13/2017 02:14 PM
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="dem" class="tab-pane">
+                                </div>
+                                <div id="exc" class="tab-pane">
+                                </div>
+                                <div id="red" class="tab-pane">
+                                </div>
+                                <div id="rel" class="tab-pane">
+                                </div>
+                                <div id="did" class="tab-pane">
+                                </div>
+                                <div id="typ" class="tab-pane">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="well well-sm">
+                        <h4>Approval Guidelines</h4>
+                        <p>
+                            Before approving any rule, it is advisable to review each one. Click on <strong>Preview Content</strong> to view the rule details.<br><br>
+                            If the rule is ready to be pushed to production, click on <strong>Approve</strong>. If the rule needs to be modified before it can be pushed to production, click on <strong>Reject</strong>. Provide notes in the <strong>Comment</strong> box.
+                        </p>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="pull-right">
+                                    <span style="color:red;font-weight:700">*</span><label>Comment:</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="2" cols="75"></textarea> <button class="btn btn-success"><i class="fa fa-thumbs-o-up fa-fw"></i> Approve</button>
+                                        <button class="btn btn-danger"><i class="fa fa-thumbs-o-down fa-fw"></i> Reject</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h4> Push to Production</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#ele">
+                                        <label>Elevate</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#dem">
+                                        <label>Demote</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#exc">
+                                        <label>Exlude</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#red">
+                                        <label>Redirect</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#rel">
+                                        <label>Relevancy</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#did">
+                                        <label>Did You Mean</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#typ">
+                                        <label>Typeahead</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="dem" class="tab-pane">
+                                </div>
+                                <div id="exc" class="tab-pane">
+                                </div>
+                                <div id="red" class="tab-pane">
+                                </div>
+                                <div id="rel" class="tab-pane">
+                                </div>
+                                <div id="did" class="tab-pane">
+                                </div>
+                                <div id="typ" class="tab-pane">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="well well-sm">
+                        <h4>Publishing Guidelines</h4>
+                        <p>
+                            To push previously approved rules to production:
+                            <ul>
+                                <li>
+                                    In the <strong>Show</strong> dropdown box, select<i>  Approved Rules for Publishing.</i>
+                                </li>
+                                <li>
+                                    When the list has refreshed, tick all applicable rules.
+                                </li>
+                                <li>
+                                    Provide notes in the <strong>Comment</strong> box and click the <strong>Publish</strong> button.
+                                </li>
+                            </ul>
+                        </p>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="pull-right">
+                                    <span style="color:red;font-weight:700">*</span><label>Comment:</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="2" cols="75"></textarea> <button class="btn btn-success"><i class="fa fa-thumbs-o-up fa-fw"></i> Approve</button>
+                                        <!--<button class="btn btn-danger"><i class="fa fa-thumbs-o-down fa-fw"></i> Reject</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
             <!--Footer-->
             <footer class="row">
                 <div class="col-sm-12 admin-footer">
