@@ -353,7 +353,7 @@
                             <div class="tab-content">
                                 <div id="ele" class="tab-pane fade in active">
                                     <br />
-                                    <table class="table table-condensed table-bordered">
+                                    <table class="table table-condensed table-hover">
                                         <thead>
                                             <tr style="text-align:center">
                                                 <th><input type="checkbox" /></th>
@@ -443,6 +443,41 @@
                     <h4> Push to Production</h4>
                 </div>
                 <div class="panel-body">
+                    <div class="well well-sm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p>
+                                            <i class="fa fa-exclamation-triangle" style="color:red"></i>  Auto-export setting is currently set to <strong>ON</strong><br />
+                                            <i>  To modify this setting, go to <strong>Workflow > Export Rule</strong> </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="pull-right">
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <label>Targert Auto-Import:</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div id="radio-switch">
+                                                <div class="btn-group btn-toggle" data-toggle="buttons">
+                                                    <label class="btn btn-default btn-xs">
+                                                        <input name="options" value="option2" type="radio" checked="checked">On
+                                                    </label>
+                                                    <label class="btn btn-default  btn-xs">
+                                                        <input name="options" type="radio">Off
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="nav nav-tabs">
@@ -501,14 +536,14 @@
                                         </div>
                                     </div>
                                     <br />
-                                    <table class="table table-condensed table-bordered">
+                                    <table class="table table-condensed table-hover">
                                         <thead>
                                             <tr style="text-align:center">
                                                 <th><input type="checkbox" /></th>
                                                 <th width="50%" style="text-align:center">Rule Info</th>
                                                 <th>Approval Status</th>
                                                 <th>Request Type</th>
-                                                <th>Request Details</th>
+                                                <th>Production Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -518,7 +553,7 @@
                                                 <td>Approved</td>
                                                 <td>Update</td>
                                                 <td>
-                                                    JamesR
+                                                    PUBLISHED
                                                     07/13/2017 02:14 PM
                                                 </td>
                                             </tr>
@@ -528,7 +563,7 @@
                                                 <td>Approved</td>
                                                 <td>Update</td>
                                                 <td>
-                                                    JamesR
+                                                    PUBLISHED
                                                     07/13/2017 02:14 PM
                                                 </td>
                                             </tr>
@@ -538,7 +573,7 @@
                                                 <td>Approved</td>
                                                 <td>Update</td>
                                                 <td>
-                                                    JamesR
+                                                    PUBLISHED
                                                     07/13/2017 02:14 PM
                                                 </td>
                                             </tr>
