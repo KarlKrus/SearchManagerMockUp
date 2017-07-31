@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="images/smiconlogo.png" rel="icon" type="image/gif">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Search Manager -  Workflow </title>
+    <link href="custom-css/jquery-ui.min.css" rel="stylesheet">
+    <link href="custom-css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/new/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom-css/style.css" rel="stylesheet" type="text/css">
+    <link href="custom-css/media-reset.css" rel="stylesheet" type="text/css">
+    <link href="custom-css/theme/theme.css" rel="stylesheet" type="text/css">
+    <link href="themer/color.css" rel="stylesheet" type="text/css">
+    <style>
+        .iconics .fa-hover a {
+            cursor: pointer;
+            display: block;
+            color: #222222;
+            line-height: 32px;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+            .iconics .fa-hover a:hover {
+                font-size: 20px;
+                color: #31708f;
+                background-color: #d9edf7;
+                border-color: #bce8f1;
+            }
+
+            .iconics .fa-hover a:active {
+                color: #3c763d;
+                background-color: #dff0d8;
+                border-color: #d6e9c6;
+            }
+    </style>
+    <!--[if lte IE 8]>
+                    <script src="js/html5shiv.min.js"></script>
+                    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style class="theme-changer">
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarItems">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="index.html">Search Manager</a>-->
+                <div class="collapse navbar-collapse" id="navbarItems">
+                    <ul class="nav navbar-top-links navbar-left">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle macmall-logo" data-toggle="dropdown">
+                                <img src="images/smiconlogo.png" class="header-logo" style="max-width: 40px; margin-top: -9px;" />
+                                <img src="images/pcm.png" class="current-mall" />
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-default logo-menu">
+                                <li>
+                                <li>
+                                    <a href="#MACMALL">
+                                        <img src="images/macmall.png" class="current-mall" />
+                                    </a>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#PCM">
+                                        <img src="images/pcm.png" class="current-mall" />
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#MACMALLBD">
+                                        <img src="images/macmallbd.png" class="current-mall" style="width:120px;height:30px" />
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#PCMBD">
+                                        <img src="images/pcmbd.png" class="current-mall" style="width:120px;height:30px" />
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#PCMG">
+                                        <img src="images/pcmg.png" class="current-mall" />
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#ECOST">
+                                        <img src="images/ecost.png" class="current-mall" style="width:120px;height:30px" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <select id="drpdwnServer" class="form-control">
+                                <option>afs-pl-schpd07</option>
+                                <option>afs-pl-schpd08</option>
+                                <option>btorschprod02</option>
+                                <option>btorschprod03</option>
+                                <option>search</option>
+                                <option>search.pcmall.com</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-home fa-lg" aria-hidden="true" style="color: gray"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-play fa-lg" aria-hidden="true" style="color: limegreen"></i> Simulator</a>
+                        </li>
+                        <li>
+                            <a href="searchrules.html"><i class="fa fa-search fa-lg" aria-hidden="true" style="color: deepskyblue"></i> Search Rules</a>
+                        </li>
+                        <li>
+                            <a href="workflow.html"><i class="fa fa-check-square-o fa-lg" aria-hidden="true" style="color: indianred"></i> Workflow</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-lg" aria-hidden="true" style="color: blueviolet"></i> Statistics</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-comments-o fa-lg" aria-hidden="true" style="color: orangered"></i> Linguistics</a>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" title="Settings" class="dropdown-toggle" href="#"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> Settings <b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-default">
+                                <li>
+                                    <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Audit Trail</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#"><i class="fa fa-users" aria-hidden="true"></i> User Accounts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-question-circle fa-lg" aria-hidden="true" style="color: red"></i> Help</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle macmall-logo" data-toggle="dropdown">
+                                <img src="images/no-pic.png" class="img-circle nav-user-photo" />
+                                <!--<span class="nav-user-info">
+                                    <span>Carlson Cruz</span>
+                                    <small><strong>carl.cruz@pcm.com</strong></small>
+                                </span>-->
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-default">
+                                <li>
+                                    <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <script>
+                function elevate() {
+                    var srl = document.getElementById('searchruleLanding');
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (ele.style.display === 'none') {
+                        srl.style.display = 'none';
+                        ele.style.display = 'block';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    }
+                }
+
+                function demote() {
+                    var srl = document.getElementById('searchruleLanding');
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (dem.style.display === 'none') {
+                        srl.style.display = 'none';
+                        ele.style.display = 'none';
+                        dem.style.display = 'block';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    }
+                }
+
+                function exclude() {
+                    var srl = document.getElementById('searchruleLanding');
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (exc.style.display === 'none') {
+                        srl.style.display = 'none';
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'block';
+                        red.style.display = 'none';
+                        rel.style.display = 'none';
+                    }
+                }
+
+                function redirect() {
+                    var srl = document.getElementById('searchruleLanding');
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (red.style.display === 'none') {
+                        srl.style.display = 'none';
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'block';
+                        rel.style.display = 'none';
+                    }
+                }
+
+                function relevancy() {
+                    var srl = document.getElementById('searchruleLanding');
+                    var ele = document.getElementById('elevateModule');
+                    var dem = document.getElementById('demoteModule');
+                    var exc = document.getElementById('excludeModule');
+                    var red = document.getElementById('redirectModule');
+                    var rel = document.getElementById('relevancyModule');
+                    if (rel.style.display === 'none') {
+                        srl.style.display = 'none';
+                        ele.style.display = 'none';
+                        dem.style.display = 'none';
+                        exc.style.display = 'none';
+                        red.style.display = 'none';
+                        rel.style.display = 'block';
+                    }
+                }
+            </script>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Elevate" onclick="elevate()">
+                                <i class="fa fa-chevron-up fa-fw"></i>
+                                <span class="collapse-menu">Elevate</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Demote" onclick="demote()">
+                                <i class="fa fa-chevron-down fa-fw"></i>
+                                <span class="collapse-menu">Demote</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Exclude" onclick="exclude()">
+                                <i class="fa fa-ban fa-fw"></i>
+                                <span class="collapse-menu">Exclude</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Redirect" onclick="redirect()">
+                                <i class="fa fa-exchange fa-fw"></i>
+                                <span class="collapse-menu">Redirect</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Relevancy" onclick="relevancy()">
+                                <i class="fa fa-angle-double-up fa-fw"></i>
+                                <span class="collapse-menu">Relevancy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-muted collapse-activator"><i class="fa fa-dedent fa-fw text"></i> <span class="collapse-menu">Collapse</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--#Navigation-->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <br />
+            <!--Footer-->
+            <footer class="row">
+                <div class="col-sm-12 admin-footer">
+                    <div class="pull-left text-info">
+                        <span>
+                            &copy;
+                            <script type="text/javascript">
+                                document.write(new Date().getFullYear());
+                            </script>
+                            PCM Sales, Inc.
+                        </span>
+                    </div>
+                    <div class="pull-right text-info">1940 E. Mariposa Ave, El Segundo, CA 90245 - 800-700-1000 </div>
+                </div>
+            </footer>
+            <!--#Footer -->
+        </div>
+        <!--#Page Content-->
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        <img href="images/smiconlogo.png" type="image/gif">Search Manager
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">
+                        <i class="fa  fa-ban"></i>
+                        NO
+                    </button>
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fa fa-check"></i>
+                        YES
+                    </a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+    </div> <!-- Modal End-->
+    <!-- /#page-wrapper -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="js/custom-js/cookie.js"></script>
+    <script src="js/custom-js/jquery.slimscroll.min.js"></script>
+    <script src="js/custom-js/input-validate.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+    <script src="js/custom-js/drag-animation.js"></script>
+    <script src="js/custom-js/jquery.validate.min.js"></script>
+    <script src="js/custom-js/jquery-validate.bootstrap-tooltip.js"></script>
+    <script src="js/custom-js/notification.js"></script>
+    <script src="js/custom-js/input-validate.js"></script>
+    <script src="js/custom-js/review-pagination.js"></script>
+    <script src="themer/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.notify-me').validate({
+                rules: {
+                    name: { required: true },
+                    lname: { required: true }
+                },
+                messages: {
+                    name: { required: "<i class='fa fa-exclamation'></i> Group Name is required" },
+                    lname: { required: "<i class='fa fa-exclamation'></i> Category is required" }
+                },
+                tooltip_options: {
+                    name: { html: true },
+                    lname: { html: true }
+                },
+                submitHandler: function (form) {
+                    form.submit();
+                }
+            });
+
+            $('.notificate1').click(function () {
+                $.notification({
+                    message: 'Success notification',
+                    type: 'success'
+                });
+            });
+            $('.notificate2').click(function () {
+                $.notification({
+                    message: 'Info notification',
+                    type: 'info'
+                });
+            });
+            $('.notificate3').click(function () {
+                $.notification({
+                    message: 'Warning notification',
+                    type: 'warning'
+                });
+            });
+            $('.notificate4').click(function () {
+                $.notification({
+                    message: 'Danger notification',
+                    type: 'danger'
+                });
+            });
+
+            $('.iconics  .fa-hover').click(function () {
+                return false;
+            });
+            $('.table-scroll').slimScroll({
+                alwaysVisible: false
+            });
+            // tooltip demo
+            $('.tooltip-demo').tooltip({
+                selector: "[data-toggle=tooltip]",
+                container: "body"
+            });
+            // popover demo
+            $(".popover-demo button").popover({
+                container: "body"
+            });
+            $(".popover-demos button").popover({
+                trigger: 'hover',
+                delay: 100,
+                container: 'body',
+                hide: 100
+            }).click(function () {
+                $jQ(this).popover('hide');
+            });
+
+            PCM.theme.init();
+        });
+
+    </script>
+</body>
+</html>
