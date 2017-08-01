@@ -177,88 +177,42 @@
                 </div>
             </div>
             <script>
-                function elevate() {
-                    var srl = document.getElementById('searchruleLanding');
-                    var ele = document.getElementById('elevateModule');
-                    var dem = document.getElementById('demoteModule');
-                    var exc = document.getElementById('excludeModule');
-                    var red = document.getElementById('redirectModule');
-                    var rel = document.getElementById('relevancyModule');
-                    if (ele.style.display === 'none') {
-                        srl.style.display = 'none';
-                        ele.style.display = 'block';
-                        dem.style.display = 'none';
-                        exc.style.display = 'none';
-                        red.style.display = 'none';
-                        rel.style.display = 'none';
+                function workflow() {
+                    var wrl = document.getElementById('workflowLanding');
+                    var wor = document.getElementById('workflowModule');
+                    var exp = document.getElementById('exportModule');
+                    var imp = document.getElementById('importModule');
+                    if (wor.style.display === 'none') {
+                        wrl.style.display = 'none';
+                        wor.style.display = 'block';
+                        exp.style.display = 'none';
+                        imp.style.display = 'none';
                     }
                 }
 
-                function demote() {
-                    var srl = document.getElementById('searchruleLanding');
-                    var ele = document.getElementById('elevateModule');
-                    var dem = document.getElementById('demoteModule');
-                    var exc = document.getElementById('excludeModule');
-                    var red = document.getElementById('redirectModule');
-                    var rel = document.getElementById('relevancyModule');
-                    if (dem.style.display === 'none') {
-                        srl.style.display = 'none';
-                        ele.style.display = 'none';
-                        dem.style.display = 'block';
-                        exc.style.display = 'none';
-                        red.style.display = 'none';
-                        rel.style.display = 'none';
+                function exportRule() {
+                    var wrl = document.getElementById('workflowLanding');
+                    var wor = document.getElementById('workflowModule');
+                    var exp = document.getElementById('exportModule');
+                    var imp = document.getElementById('importModule');
+                    if (exp.style.display === 'none') {
+                        wrl.style.display = 'none';
+                        wor.style.display = 'none';
+                        exp.style.display = 'block';
+                        imp.style.display = 'none';
                     }
                 }
 
-                function exclude() {
-                    var srl = document.getElementById('searchruleLanding');
-                    var ele = document.getElementById('elevateModule');
-                    var dem = document.getElementById('demoteModule');
-                    var exc = document.getElementById('excludeModule');
-                    var red = document.getElementById('redirectModule');
-                    var rel = document.getElementById('relevancyModule');
-                    if (exc.style.display === 'none') {
-                        srl.style.display = 'none';
-                        ele.style.display = 'none';
-                        dem.style.display = 'none';
-                        exc.style.display = 'block';
-                        red.style.display = 'none';
-                        rel.style.display = 'none';
-                    }
-                }
-
-                function redirect() {
-                    var srl = document.getElementById('searchruleLanding');
-                    var ele = document.getElementById('elevateModule');
-                    var dem = document.getElementById('demoteModule');
-                    var exc = document.getElementById('excludeModule');
-                    var red = document.getElementById('redirectModule');
-                    var rel = document.getElementById('relevancyModule');
-                    if (red.style.display === 'none') {
-                        srl.style.display = 'none';
-                        ele.style.display = 'none';
-                        dem.style.display = 'none';
-                        exc.style.display = 'none';
-                        red.style.display = 'block';
-                        rel.style.display = 'none';
-                    }
-                }
-
-                function relevancy() {
-                    var srl = document.getElementById('searchruleLanding');
-                    var ele = document.getElementById('elevateModule');
-                    var dem = document.getElementById('demoteModule');
-                    var exc = document.getElementById('excludeModule');
-                    var red = document.getElementById('redirectModule');
-                    var rel = document.getElementById('relevancyModule');
-                    if (rel.style.display === 'none') {
-                        srl.style.display = 'none';
-                        ele.style.display = 'none';
-                        dem.style.display = 'none';
-                        exc.style.display = 'none';
-                        red.style.display = 'none';
-                        rel.style.display = 'block';
+                function autoImport() {
+                    var wrl = document.getElementById('workflowLanding');
+                    var wor = document.getElementById('workflowModule');
+                    var exp = document.getElementById('exportModule');
+                    var imp = document.getElementById('importModule');
+                    if (imp.style.display === 'none') {
+                        wrl.style.display = 'none';
+                        wor.style.display = 'none';
+                        exp.style.display = 'none';
+                        imp.style.display = 'block';
                     }
                 }
             </script>
@@ -266,7 +220,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Workflow" onclick="elevate()">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Workflow" onclick="workflow()">
                                 <i class="fa  fa-thumbs-o-up fa-fw"></i>
                                 <span class="collapse-menu">Workflow</span>
                             </a>
@@ -284,13 +238,13 @@
                             </a>
                         </li>-->
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Export Rule" onclick="exclude()">
+                            <a data-toggle="tooltip" data-placement="right" title="Export Rule" onclick="exportRule()">
                                 <i class="fa fa-upload fa-fw"></i>
                                 <span class="collapse-menu">Export Rule</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="redirect()">
+                            <a data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="autoImport()">
                                 <i class="fa fa-download fa-fw"></i>
                                 <span class="collapse-menu">Auto Import</span>
                             </a>
@@ -354,7 +308,7 @@
                 </div>
 
             </div>
-            <div id="workflowModule">
+            <div id="workflowModule" style="display:none">
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4> Queued for Approval</h4>
@@ -685,23 +639,25 @@
                     <div class="panel-footer"></div>
                 </div>
             </div>
-            <!--Footer-->
-            <footer class="row">
-                <div class="col-sm-12 admin-footer">
-                    <div class="pull-left text-info">
-                        <span>
-                            &copy;
-                            <script type="text/javascript">
+            <div id="exportModule" style="display:none"></div>
+            <div id="importModule" style="display:none"></div>
+                <!--Footer-->
+                <footer class="row">
+                    <div class="col-sm-12 admin-footer">
+                        <div class="pull-left text-info">
+                            <span>
+                                &copy;
+                                <script type="text/javascript">
                                 document.write(new Date().getFullYear());
-                            </script>
-                            PCM Sales, Inc.
-                        </span>
+                                </script>
+                                PCM Sales, Inc.
+                            </span>
+                        </div>
+                        <div class="pull-right text-info">1940 E. Mariposa Ave, El Segundo, CA 90245 - 800-700-1000 </div>
                     </div>
-                    <div class="pull-right text-info">1940 E. Mariposa Ave, El Segundo, CA 90245 - 800-700-1000 </div>
-                </div>
-            </footer>
-            <!--#Footer -->
-        </div>
+                </footer>
+                <!--#Footer -->
+            </div>
         <!--#Page Content-->
     </div>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
