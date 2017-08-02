@@ -219,32 +219,38 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Workflow" onclick="workflow()">
+                        <!--<li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Synonym" onclick="workflow()">
                                 <i class="fa  fa-language fa-fw"></i>
                                 <span class="collapse-menu">Synonym</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Export Rule" onclick="exportRule()">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Stopword" onclick="exportRule()">
                                 <i class="fa fa-strikethrough fa-fw"></i>
                                 <span class="collapse-menu">Stopword</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="autoImport()">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Protword" onclick="autoImport()">
                                 <i class="fa fa-font fa-fw"></i>
                                 <span class="collapse-menu">Protword</span>
                             </a>
+                        </li>-->
+                        <li>
+                            <a href="#" data-toggle="tooltip" data-placement="right" title="Stored Strings" onclick="workflow()">
+                                <i class="fa  fa-language fa-fw"></i>
+                                <span class="collapse-menu">Stored Strings</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="autoImport()">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title=" Did You Mean" onclick="autoImport()">
                                 <i class="fa fa-text-width fa-fw"></i>
                                 <span class="collapse-menu">Did You Mean</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="tooltip" data-placement="right" title="Auto Import" onclick="autoImport()">
+                            <a href="#" data-toggle="tooltip" data-placement="right" title=" Typeahead" onclick="autoImport()">
                                 <i class="fa fa-keyboard-o fa-fw"></i>
                                 <span class="collapse-menu">Typeahead</span>
                             </a>
@@ -306,6 +312,189 @@
                         </p>
                     </div>
                 </div>-->
+
+            </div>
+            <div id="stringModule">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="form-inline">
+                                    <div class="form-group"><div class="pull-left"><h4>Synonyms</h4></div></div>
+                                    <div class="form-group">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-success btn-xs" title="Download">
+                                                <i class="fa fa-download fa-lg" style="color:white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-condensed table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-weight:700">&</td>
+                                            <td>&</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">a</td>
+                                            <td>an, and, are, as, at</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">b</td>
+                                            <td>be, but, by</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">f</td>
+                                            <td>for</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">i</td>
+                                            <td>if, in, into, is, it</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">n</td>
+                                            <td>no, not</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">o</td>
+                                            <td>of, on, or</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">s</td>
+                                            <td>stopworda, stopwordb, s, such</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">t</td>
+                                            <td>t, that, the, their, then, there, these, they, this, to</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">w</td>
+                                            <td>was, will, with</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <div class="form-inline">
+                                    <div class="form-group"><div class="pull-left"><h4>Stopwords</h4></div></div>
+                                    <div class="form-group">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-success btn-xs" title="Download">
+                                                <i class="fa fa-download fa-lg" style="color:white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-condensed table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-weight:700">&</td>
+                                            <td>&</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">a</td>
+                                            <td>an, and, are, as, at</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">b</td>
+                                            <td>be, but, by</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">f</td>
+                                            <td>for</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">i</td>
+                                            <td>if, in, into, is, it</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">n</td>
+                                            <td>no, not</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">o</td>
+                                            <td>of, on, or</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">s</td>
+                                            <td>stopworda, stopwordb, s, such</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">t</td>
+                                            <td>t, that, the, their, then, there, these, they, this, to</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">w</td>
+                                            <td>was, will, with</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="form-inline">
+                                    <div class="form-group"><div class="pull-left"><h4>Protwords</h4></div></div>
+                                    <div class="form-group">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-success btn-xs" title="Download">
+                                                <i class="fa fa-download fa-lg" style="color:white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-condensed table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-weight:700">a</td>
+                                            <td>apple</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">d</td>
+                                            <td>dontstems</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">i</td>
+                                            <td>imac</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">m</td>
+                                            <td>macbook</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">s</td>
+                                            <td>sims</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">z</td>
+                                            <td>zwhacky</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:700">o</td>
+                                            <td>of, on, or</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div></div>
+                </div>
+            </div>
+            <div id="didyoumeanModule">
+
+            </div>
+            <div id="typeaheadModule">
 
             </div>
             <!--Footer-->
